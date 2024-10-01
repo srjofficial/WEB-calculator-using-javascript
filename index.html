@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script>
+        function displaynumber(num){
+            inp.value+=num
+            console.log(inp.value);
+        }
+        function clearText(){
+            inp.value=""
+            console.log(inp.value);
+        }
+        function calculation(){
+            inp.value=eval(inp.value)
+            console.log(inp.value);
+
+        }
+        function cut(){
+            inp.value=inp.value.slice(0,-1)
+            console.log(inp.value);
+        }
+    </script>
+    <style>
+        .btn{
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+    <div class="row">
+        
+        <div class="col-3 "></div>
+        <div class="col-6 bg-secondary rounded-5 text-center mt-5 p-5">
+            <input placeholder="ENTER" id="inp" class="form-control text-end" type="text">
+            <div class="row mt-4 ">
+            <div class="col-3"><button onclick="displaynumber(7)" class="btn bg-light">7</button></div>
+            <div class="col-3"><button onclick="displaynumber(8)" class="btn bg-light">8</button></div>
+            <div class="col-3"><button onclick="displaynumber(9)" class="btn bg-light">9</button></div>
+            <div class="col-3"><button onclick="displaynumber('*')" class="btn bg-light">x</button></div>
+        </div>
+       
+
+        <div class="row mt-4">
+            <div class="col-3"><button onclick="displaynumber(4)" class="btn  bg-light">4</button></div>
+            <div class="col-3"><button onclick="displaynumber(5)" class="btn bg-light">5</button></div>
+            <div class="col-3"><button onclick="displaynumber(6)" class="btn  bg-light">6</button></div>
+            <div class="col-3"><button onclick="displaynumber('-')" class="btn bg-light">-</button></div>
+            </div>
+            
+        <div class="row mt-4">
+            <div class="col-3"><button onclick="displaynumber(1)" class="btn bg-light">1</button></div>
+            <div class="col-3"><button onclick="displaynumber(2)" class="btn bg-light">2</button></div>
+            <div class="col-3"><button onclick="displaynumber(3)" class="btn bg-light">3</button></div>
+            <div class="col-3"><button onclick="displaynumber('+')" class="btn bg-light">+</button></div>
+            </div>
+
+        <div class="row mt-4">
+            <div class="col-3"><button onclick="clearText()" class="btn bg-light">AC</button></div>
+            <div class="col-3"><button onclick="displaynumber(0)" class="btn bg-light">0</button></div>
+            <div class="col-3"><button onclick="displaynumber('/')" class="btn bg-light">/</button></div>
+            <div class="col-3"><button onclick="calculation()" class="btn bg-light">=</button></div>
+            </div>
+        <div class="row mt-4">
+            <div class="col-3"><button onclick="cut()" class="btn bg-light">‎ <i class="fa-solid fa-delete-left"></i>‎</button></div>
+            </div>
+        </div>
+        <div class="col-3 mt-4"></div>
+    </div>
+</body>
+</html>
