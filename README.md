@@ -18,6 +18,7 @@ This is a simple calculator web application built using HTML, CSS, JavaScript, a
 - **Smooth Transitions**: Real-time calculation updates as numbers are entered and operations performed.
 
 ## 📸 Screenshots
+![Screenshot 2024-10-01 172131](https://github.com/user-attachments/assets/2d10c26e-00cc-4ae7-9585-3250d9d86076)
 
 
 
